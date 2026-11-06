@@ -192,7 +192,9 @@ def fan_chart(bands: pd.DataFrame, start_value: float, title: str = "Where the p
                              line=dict(color=INK2, width=1, dash="dash"), hoverinfo="skip"))
     fig.update_layout(hovermode="x unified")
     fig.update_yaxes(tickprefix="$", tickformat=",")
-    return _base(fig, title, xtitle="Trading days from today", ytitle="Portfolio value")
+    _base(fig, title, xtitle="Trading days from today", ytitle="Portfolio value")
+    fig.update_layout(margin=dict(l=60, r=24, t=120, b=56))  # room for a legend that wraps to two rows
+    return fig
 
 
 def outcomes_histogram(final: np.ndarray, start_value: float, title: str = "How the possible endings spread out") -> go.Figure:

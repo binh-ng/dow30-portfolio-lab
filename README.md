@@ -23,7 +23,8 @@ Trained on Jul 2020 to Dec 2022, then held through Dec 2024, the original max-Sh
 - **Interactive app:** `streamlit run streamlit_app.py`
   Set how much you are investing, how much risk feels OK (five steps from Very cautious to Aggressive), which sectors and stocks to include or leave out, which stocks you definitely want, and how many stocks to hold. You get a dollar-by-dollar shopping list, then see how the mix would have done on unseen data and what the next week, month, quarter or year could look like.
 - **Static report (no install):** open `docs/index.html`. All charts are interactive, so hover over anything.
-- **Live links:** _add your Streamlit and GitHub Pages URLs here after deploying._
+- **Live app:** https://dow30-portfolio-lab.streamlit.app/
+- **Live report:** https://binh-ng.github.io/dow30-portfolio-lab/
 
 ![Test it on the past](docs/img/app-test-on-the-past.png)
 
